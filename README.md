@@ -18,7 +18,7 @@ The simulation correctly validates that natural uranium in an infinite medium is
 ## 📊 Key Results
 The simulation tracks the neutron population over generations. Unlike simplified models that predict infinite growth, the physics-aware model demonstrates the "resonance trap" effect.
 
-![Simulation Result](simulation_result.png)
+![Simulation Result](img/output.png)
 *(Replace this with your actual graph image file)*
 
 **Result Analysis:**
@@ -48,3 +48,48 @@ def get_watt_sample():
     u = np.random.random()
     sample = np.interp(u, cdf, x)
     return sample
+```
+## 🚀 How to Run
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/jmalfaro2019/PROJET.git](https://github.com/jmalfaro2019/PROJET.git)
+2. Install dependencies:
+   ```bash
+   pip install numpy matplotlib scipy
+   ```
+3. Run the simulation script:
+   ```bash
+   python main.py
+   ```
+## 📚 Project Structure
+```bash
+PROJET/
+│
+├── .gitignore           
+├── README.md              
+├── requirements.txt      
+├── main.py               
+│
+├── src/                  
+│   ├── material.py
+│   ├── physics.py
+│   └── simulation.py
+│
+├── docs/                  
+│   ├── Rapport_fr.pdf
+│   └── Rapport_eng.pdf
+│
+├── notebooks/             
+│   └── sim.ipynb
+│
+└── results/              
+    └── simulation_result.png
+```
+## 🧠 Skills Demonstrated
+- **Scientific Computing:** NumPy, Statistical Modeling, Numerical Integration.
+- **Physics Simulation:** Monte Carlo methods, Particle Transport.
+- **Data Visualization:** Matplotlib for analyzing population dynamics.
+- **Technical Writing:** Comprehensive LaTeX reporting.
+
+---
+*Project developed as part of a montecarlo coursework by Jose Alfaro, Luc Eustachon, Farah Dogui and Rana Korchid.*
