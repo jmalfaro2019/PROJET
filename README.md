@@ -62,10 +62,30 @@ def get_watt_sample():
    python main.py
    ```
 ## 📚 Project Structure
-- `main.py`: Core simulation loop and physics logic.
-- `report.pdf`: Detailed scientific report (LaTeX) explaining the mathematical framework.
-- `data/` (or within the script): Contains cross-section datasets and interpolation logic.
-
+```bash
+PROJET/
+│
+├── .gitignore             # (Nuevo) Para que no se suba basura
+├── README.md              # Tu documentación principal
+├── requirements.txt       # (Corregido) Lista de dependencias
+├── main.py                # Tu punto de entrada limpio
+│
+├── src/                   # Código fuente
+│   ├── material.py
+│   ├── physics.py
+│   └── simulation.py
+│   (la carpeta __pycache__ seguirá aquí en tu PC, pero grisácea/ignorada)
+│
+├── docs/                  # (Nuevo) Documentación
+│   ├── Rapport_fr.pdf
+│   └── Rapport_eng.pdf
+│
+├── notebooks/             # (Nuevo) Demos y experimentos
+│   └── sim.ipynb
+│
+└── results/               # Salidas generadas
+    └── simulation_result.png
+```
 ## 🧠 Skills Demonstrated
 - **Scientific Computing:** NumPy, Statistical Modeling, Numerical Integration.
 - **Physics Simulation:** Monte Carlo methods, Particle Transport.
