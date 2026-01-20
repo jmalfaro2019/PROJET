@@ -18,7 +18,7 @@ The simulation correctly validates that natural uranium in an infinite medium is
 ## 📊 Key Results
 The simulation tracks the neutron population over generations. Unlike simplified models that predict infinite growth, the physics-aware model demonstrates the "resonance trap" effect.
 
-![Simulation Result](simulation_result.png)
+![Simulation Result](img/output.png)
 *(Replace this with your actual graph image file)*
 
 **Result Analysis:**
